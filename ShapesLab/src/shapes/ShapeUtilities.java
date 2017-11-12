@@ -30,6 +30,21 @@ public class ShapeUtilities {
 		}
 
 	}
+	public static Shape randomcustomShape()
+	{
+		Random ran = new Random();
+		int x = ran.nextInt(2);
+		
+		switch (x)
+		{
+		case 0:
+			return new Heptagon(ran.nextInt(100));
+		case 1:
+			return new Parallelogram(ran.nextInt(100), ran.nextInt(90), ran.nextInt(100));
+		default:
+			return new Heptagon(ran.nextInt(100));
+		}
+	}
 
 	/**
 	 * adds up the area of all the shapes in the array
