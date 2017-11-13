@@ -10,7 +10,7 @@ public class Heptagon implements Shape {
 	}
 	public double calculateArea()
 	{
-		return 7 * side * side / Math.tan(pi/7) * 4;
+		return (7 * side * side) / (Math.tan(pi/7) * 4);
 	}
 	public double calculatePerimeter()
 	{

@@ -21,6 +21,6 @@ public class Parallelogram implements Shape{
 	}
 	public String toString()
 	{
-		return "Base of paralellogram: " + base + " Height of paralellogram: " + height + " Measure of small angle in degrees: " + smllangle + " Area: " + calculateArea() + " Perimeter: " + calculatePerimeter();
+		return "Base of paralellogram: " + base + " Height of paralellogram: " + height + " Measure of small angle in radians: " + smllangle + " Area: " + calculateArea() + " Perimeter: " + calculatePerimeter();
 	}
 }

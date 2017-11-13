@@ -47,7 +47,7 @@ public class Runner {
 		System.out.println("\nTotal Area: " + ShapeUtilities.sumArea(shapeArr));
 		System.out.println("Total Perimeter: " + ShapeUtilities.sumPerimeter(shapeArr));
 		
-		shapeArr = new Shape[10];
+		shapeArr = new Shape[2];
 		
 		for(int i = 0; i < shapeArr.length; i++)
 		{
