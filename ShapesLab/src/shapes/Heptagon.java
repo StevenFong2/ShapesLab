@@ -2,7 +2,7 @@ package shapes;
 
 public class Heptagon implements Shape {
 	private int side;
-	private double pi = 3.14;
+	private double pi = Math.PI;
 	
 	public Heptagon (int side)
 	{

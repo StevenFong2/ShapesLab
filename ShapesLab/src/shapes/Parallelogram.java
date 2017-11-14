@@ -2,13 +2,13 @@ package shapes;
 
 public class Parallelogram implements Shape{
 	private int base;
-	private double smllangle;
+	private double smllradians;
 	private int height;
-	private double pi = 3.14;
+	private double pi = Math.PI;
 	public Parallelogram(int base, int smlldegrees, int height)
 	{
 		this.base = base;
-		this.smllangle = smlldegrees * pi / 180;
+		this.smllradians = smlldegrees * pi / 180;
 		this.height = height;
 	}
 	public double calculateArea()
@@ -17,10 +17,10 @@ public class Parallelogram implements Shape{
 	}
 	public double calculatePerimeter()
 	{
-		return 2 * base + 2 * height / Math.sin(smllangle);
+		return 2 * base + 2 * height / Math.sin(smllradians);
 	}
 	public String toString()
 	{
-		return "Base of paralellogram: " + base + " Height of paralellogram: " + height + " Measure of small angle in radians: " + smllangle + " Area: " + calculateArea() + " Perimeter: " + calculatePerimeter();
+		return "Base of paralellogram: " + base + " Height of paralellogram: " + height + " Measure of small angle in radians: " + smllradians + " Area: " + calculateArea() + " Perimeter: " + calculatePerimeter();
 	}
 }
