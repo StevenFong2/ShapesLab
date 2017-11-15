@@ -2,9 +2,16 @@ package shapes;
 
 public class Parallelogram implements Shape{
 	private int base;
+	// smllradians is the measure of the smallest angle in the parallelogram in radians.
 	private double smllradians;
 	private int height;
 	private double pi = Math.PI;
+	
+	/*
+	 * @param base is the measure of the base
+	 * @param smlldegrees is the measure of the the smallest angle in degrees
+	 * @param height the measure of the height of the parallelogram.
+	 */
 	public Parallelogram(int base, int smlldegrees, int height)
 	{
 		this.base = base;
@@ -17,7 +24,7 @@ public class Parallelogram implements Shape{
 	}
 	public double calculatePerimeter()
 	{
-		return 2 * base + 2 * height / Math.sin(smllradians);
+		return (2 * base) + (2 * height / Math.sin(smllradians));
 	}
 	public String toString()
 	{

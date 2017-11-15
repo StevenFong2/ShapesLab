@@ -49,29 +49,19 @@ public class ShapeUtilities {
 	/**
 	 * adds up the area of all the shapes in the array
 	 * 
-	 * @param shapes
+	 * @param shapes is the name of an array
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		// To be written by student
+		// while loop to add up all the calculated areas of the shapes in the array.
 		int i = 0;
 		double sum = 0;
-		if (shapes.length == 10)
+		while (i < shapes.length)
 		{
-			while (i < shapes.length)
-			{
-				sum = sum + shapes[i].calculateArea();
-				i++;
-			}
+			sum = sum + shapes[i].calculateArea();
+			i++;
 		}
-		else if (shapes.length == 3)
-		{
-			while (i < shapes.length)
-			{
-				sum = sum + shapes[i].calculateArea();
-				i++;
-			}
-		}
+
 		return sum;
 	}
 
@@ -82,25 +72,15 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
-		// To be written by student
+		// While loop to add up all the calculated perimeters of the shapes in the array.
 		double sum = 0;
 		int i = 0;
-		if (shapes.length == 10)
+		while (i < shapes.length)
 		{
-			while (i < shapes.length)
-			{
-				sum = sum + shapes[i].calculatePerimeter();
-				i++;
-			}
+			sum = sum + shapes[i].calculatePerimeter();
+			i++;
 		}
-		else if (shapes.length == 3)
-		{
-			while (i < shapes.length)
-			{
-				sum = sum + shapes[i].calculatePerimeter();
-				i++;
-			}
-		}
+
 		return sum;
 	}
 }
