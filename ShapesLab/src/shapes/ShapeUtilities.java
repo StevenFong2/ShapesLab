@@ -45,6 +45,22 @@ public class ShapeUtilities {
 			return new Heptagon(ran.nextInt(100));
 		}
 	}
+	public static void countShapes(Shape[] shapes)
+	{
+		int rectangles = 0;
+		int circles = 0;
+		for (Shape x : shapes)
+		{
+			if (x instanceof Circle)
+			{
+				circles++;
+			}
+			if (x instanceof Rectangle)
+			{
+				rectangles++;
+			}
+		}
+		System.out.println(circles + " Circles Found and " + rectangles + " rectangles.");	}
 
 	/**
 	 * adds up the area of all the shapes in the array
